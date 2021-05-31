@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="page.js" type="module"></script>
   <title>Lab 9</title>
 
   <style>
@@ -24,6 +25,13 @@
       width: 240px;
     }
   </style>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "e205b718a55c432aa39f98c17adeb044"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+  </script>
 </head>
 <body>
   <fieldset>
@@ -64,9 +72,6 @@
       let operator = document.querySelector('#operator').value;
       output.innerHTML = eval(`${firstNum} ${operator} ${secondNum}`);
     });
-
-    let errorBtns = Array.from(document.querySelectorAll('#error-btns > button'));
-    // TODO - Make buttons functional
   </script>
 </body>
 </html>
