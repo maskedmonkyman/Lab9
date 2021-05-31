@@ -1,7 +1,5 @@
 let errorBtns = Array.from(document.querySelectorAll('#error-btns > button'));
 
-TrackJS.track('Testing TrackJS!');
-
 window.onerror = function(message, source, lineno, colno, error){
     console.log(message +
         "\nsource: " + source +
